@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário da Hadassa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f9e7ff, #ffe6f0);
+            color: #4a4a4a;
+            text-align: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin-top: 20px;
+            color: #d72668;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 1.8em;
+            color: #f56fa1;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+        .button {
+            background: #d72668;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background: #f56fa1;
+        }
+        .gallery {
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .gallery img {
+            border-radius: 10px;
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .story {
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: left;
+        }
+        .story h3 {
+            color: #d72668;
+            margin-bottom: 15px;
+        }
+        .story p {
+            color: #4a4a4a;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .butterfly {
+            position: absolute;
+            animation: fly 10s infinite ease-in-out;
+        }
+        .butterfly:nth-child(1) {
+            top: 20%; left: 10%; width: 50px;
+            animation-delay: 0s;
+        }
+        .butterfly:nth-child(2) {
+            top: 40%; left: 60%; width: 60px;
+            animation-delay: 2s;
+        }
+        .butterfly:nth-child(3) {
+            top: 70%; left: 30%; width: 40px;
+            animation-delay: 4s;
+        }
+        @keyframes fly {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            50% {
+                transform: translate(50px, -50px) rotate(10deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(-10deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao 1.º Aniversário da Hadassa!</h1>
+        <h2>Uma celebração especial cheia de alegria!</h2>
+        <p>Data: 07 de dezembro de 2024<br>Local: Bairro Operário, junto a Escola do Fungi<br>Horário: 14h00</p>
+        <a href="https://forms.google.com/" class="button">Confirmar Presença</a>
+    </div>
+    
+    <!-- História da Hadassa -->
+    <div class="story">
+        <h3>Conheça a História da Hadassa</h3>
+        <h4>Há 11 meses, a nossa pequena Hadassa chegou ao mundo, enchendo nossas vidas de amor, luz e muitos sorrisos. Desde o seu primeiro olhar até os seus passos iniciais, cada momento tem sido mágico e inesquecível. Este aniversário marca o início de muitas aventuras e conquistas que ainda estão por vir.</p>
+        <h4>Estamos muito felizes por compartilhar este momento especial com vocês. A Hadassa adora borboletas, música e todas as coisas doces, o que nos inspirou a criar este tema encantador para a sua festa!</p>
+    </div>
+    
+    <!-- Galeria de Fotos -->
+    <div class="gallery">
+        <img src="IMG_0380.jpeg" alt="Foto 1 da Hadassa">
+        <img src="IMG_0380.jpeg" alt="Foto 2 da Hadassa">
+
+    <!-- Borboletas animadas -->
+    <svg class="butterfly" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d72668">
+        <path d="M19.5 10.5C20.328 10.5 21 9.828 21 9c0-.828-.672-1.5-1.5-1.5h-.016C19.5 5.672 18.328 5 17 5c-1.328 0-2.5.672-2.5 2.5H9.5C9.5 5.672 8.328 5 7 5c-1.328 0-2.5.672-2.5 2.5H4C3.172 7.5 2.5 8.172 2.5 9c0 .828.672 1.5 1.5 1.5h.016C4 14.328 5.172 15 6.5 15c1.328 0 2.5-.672 2.5-2.5h5C14 15.328 15.172 15 16.5 15c1.328 0 2.5-.672 2.5-2.5h.016c.828 0 1.5-.672 1.5-1.5z"/>
+    </svg>
+    <svg class="butterfly" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#f56fa1">
+        <path d="M19.5 10.5C20.328 10.5 21 9.828 21 9c0-.828-.672-1.5-1.5-1.5h-.016C19.5 5.672 18.328 5 17 5c-1.328 0-2.5.672-2.5 2.5H9.5C9.5 5.672 8.328 5 7 5c-1.328 0-2.5.672-2.5 2.5H4C3.172 7.5 2.5 8.172 2.5 9c0 .828.672 1.5 1.5 1.5h.016C4 14.328 5.172 15 6.5 15c1.328 0 2.5-.672 2.5-2.5h5C14 15.328 15.172 15 16.5 15c1.328 0 2.5-.672 2.5-2.5h.016c.828 0 1.5-.672 1.5-1.5z"/>
+    </svg>
+</body>
+</html>
